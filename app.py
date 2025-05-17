@@ -13,7 +13,19 @@ with open('tokenizer.pkl', 'rb') as f:
 max_sequence_length = 100
 
 # Streamlit app
+
+
 st.title("📰 Fake News Detection")
+
+st.markdown("""
+Welcome to the Fake News Detection app. Enter a news headline or article below to analyze whether it's likely **real** or **fake**.
+
+- 📚 **Dataset Used**: [Fake and Real News Dataset (Kaggle)](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
+- 💻 **Code Repository**: [GitHub - Fake News Detection](https://github.com/<your-username>/fake-news-detector)
+
+---
+""")
+
 st.write("Enter a news headline or article below to determine its authenticity.")
 
 # Text input
